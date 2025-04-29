@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Phiếu kế toán",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfiphieukt2"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E2B1D99CB6DAA2B36F07AF64A98DEABFFCF21074_TM",
+    "semanticObject": "zfiphieukt2",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E2B1D99CB6DAA2B36F07AF64A98DEABFFCF21074_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Phiếu kế toán",
+        "subtitle": "ZGL01"
+      }
+    }
+  ]
+}

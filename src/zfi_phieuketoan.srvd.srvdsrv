@@ -1,0 +1,5 @@
+@EndUserText.label: 'Phiếu kế toán service def'
+define service ZFI_PHIEUKETOAN {
+  expose ZFI_I_PHIEUKT;
+  expose ZFI_I_PHIEUKT_ITEM;
+}

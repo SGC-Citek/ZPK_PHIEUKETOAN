@@ -1,0 +1,45 @@
+@Metadata.layer: #CORE
+@UI: {
+       headerInfo: {
+            typeName: 'Item',
+            typeNamePlural: 'Items',
+            title: {
+    type: #STANDARD,
+    label: 'JournalItem'
+            }
+       },
+    presentationVariant: [{ sortOrder: [{ by: 'CompanyCode', direction: #ASC}] }]
+}
+annotate view ZFI_I_PHIEUKT_ITEM
+    with 
+{
+     @UI.facet: [ { id:            'Item',
+                 purpose:       #STANDARD,
+                 type:          #IDENTIFICATION_REFERENCE,
+                 label:         'Item',
+                 position:      10 }  ]
+  @UI: { lineItem: [{ position: 10 }],
+         identification: [{ position: 10 }]}
+    @EndUserText.label: 'Mã khách hàng'
+  ma_kh;
+  @UI: { lineItem: [{ position: 20 }],
+         identification: [{ position: 20 }]}
+    @EndUserText.label: 'Tên khách hàng'
+  ten_kh;
+  @UI: { lineItem: [{ position: 30 }],
+         identification: [{ position: 30 }]}
+    @EndUserText.label: 'Tài khoản'
+  tai_khoan;
+  @UI: { lineItem: [{ position: 40 }],
+         identification: [{ position: 40 }]}
+    @EndUserText.label: 'Phát sinh nợ'
+  phat_sinh_no;
+  @UI: { lineItem: [{ position: 50 }],
+         identification: [{ position: 50 }]}
+    @EndUserText.label: 'Phát sinh có'
+  phat_sinh_co;
+   @UI: { lineItem: [{ position: 60 }],
+         identification: [{ position: 60 }]}
+    @EndUserText.label: 'Diễn giải'
+   noi_dung;
+}
